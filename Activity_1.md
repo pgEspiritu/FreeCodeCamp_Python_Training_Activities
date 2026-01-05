@@ -109,4 +109,38 @@ While **str** and **int** are common abbreviations for stats, they are **reserve
 CODE:
 
 ```python
+full_dot = '●'
+empty_dot = '○'
 
+def create_character(character,strength,intelligence,charisma):
+    
+# Character Validation 
+    if not isinstance(character, str):
+        return "The character name should be a string"
+    elif character == "":
+        return "The character should have a name"
+    elif len(character) > 10:
+        return "The character name is too long"
+    elif " " in character:
+        return "The character name should not contain spaces"
+  
+# Stat Validation
+
+    if (type(strength) != int or type(intelligence) != int or type(charisma) != int):
+        return "All stats should be integers"
+    elif (strength < 1 or intelligence < 1 or charisma < 1):
+        return "All stats should be no less than 1"
+    elif (strength > 4 or intelligence > 4 or charisma > 4):
+        return "All stats should be no more than 4"
+    elif (strength + intelligence + charisma) != 7:
+        return "The character should start with 7 points"
+
+    result = character + "\n"
+    result += "STR " + full_dot*strength + empty_dot*(10-strength) + "\n"
+    result += "INT " + full_dot*intelligence + empty_dot*(10-intelligence) + "\n"
+    result += "CHA " + full_dot*charisma + empty_dot*(10-charisma)
+
+    return result
+
+create_character('ren',4, 2, 1)
+```
