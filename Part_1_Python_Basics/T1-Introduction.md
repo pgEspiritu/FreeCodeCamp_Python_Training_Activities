@@ -41,3 +41,80 @@ Libraries like **Selenium** and **BeautifulSoup** also make it easy to interact 
 Python is a very powerful language, and yet, it's easy to learn. From simple automation scripts to large-scale, industrial-level applications, you can use Python for just about anything.
 
 Python is a great choice for anyone who wants to learn programming, regardless of what they choose to specialize in later.
+
+---
+
+# 🖥️ How Do You Install, Configure and Use Python in Your Local Environment?
+
+In the last lesson, you learned what Python is and what you can do with it. Now, let's look into how you can set up Python on your local machine.
+
+The easiest way to install Python on Windows and Mac is to download the installer from the official Python website. We'll also go over running Python on Linux later in this lesson.
+
+Go to [https://www.python.org/](https://www.python.org/) and hover over **Downloads**. A modal will appear showing the current version of Python for your operating system (OS).
+
+---
+
+## 🍎 Installing Python on macOS
+
+1. Click on the button showing the current version of Python (from the previous modal), and you'll start downloading a `.pkg` installation file automatically.  
+2. Once the `.pkg` installer is finished downloading, open it, then click **Continue** in the window that opens up.  
+3. Continue clicking the **Continue** button until you get to the **Installation Type** section. There, click the **Install** button.  
+4. Enter your password if necessary, then start the installation.  
+5. After that, you should get a congratulations message saying that Python has been successfully installed.  
+6. Click the **Close** button, and you're done!  
+
+You can verify the installation by opening up your terminal and running:
+
+```bash
+python --version
+# or
+python3 --version
+```
+
+You can also open the Python interpreter by running:
+
+```bash
+python
+# or
+python3
+```
+
+---
+
+A terminal is a text-based interface that lets you interact with your computer by typing commands. Each operating system comes with a default terminal app. On macOS, you can use the Terminal app. On Windows, you can use Command Prompt or PowerShell. On Linux, each desktop environment has its own default terminal app, like **GNOME** Terminal or **Konsole**.
+
+> Note: On some older macOS and Linux systems, python can be reserved for Python 2, while python3 is for Python 3 specifically. If you run `python --version` and see a version of Python 2 like Python 2.7.18, then you should use `python3` going forward. Python 2 is end-of-life and should not be used for any new development.
+
+---
+
+## 🪟 Installing Python on Windows
+
+1. Go to [https://www.python.org/](https://www.python.org/), and hover over **Downloads**. You should see a modal that says Download for Windows and a download button with the current version of Python.
+2. Click on the version number, and you'll start downloading a Windows executable (.exe) file automatically.'
+3. Once you've finished downloading the Python installer for Windows, double-click on it, and follow the instructions.
+4. When you see the option Add python.exe to Path, check that option, then click Install Now. Doing that will make things easier for you later.
+
+You can verify the installation by opening up a command line shell like PowerShell and running:
+```powershell
+python --version
+```
+
+You can also open the Python interpreter by running:
+```powershell
+python
+```
+
+---
+
+## 🐧 Installing Python on Linux
+
+Most major distros like Ubuntu, Debian, and Fedora come with Python installed.
+
+Just open a terminal and run:
+```bash
+python --version
+# or
+python3 --version
+```
+
+If either command doesn't show a version of Python, you can search for an installation package for your flavor of Linux at [https://www.python.org](https://www.python.org), or search online for the recommended way to install Python for your distro.
