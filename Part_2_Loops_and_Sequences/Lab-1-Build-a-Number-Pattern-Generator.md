@@ -22,3 +22,42 @@ Fulfill the user stories below and get all the tests to pass to complete the lab
   **`Argument must be an integer value.`**
 - If the argument passed to the function is **less than 1**, the function should return:  
   **`Argument must be an integer greater than 0.`**
+
+---
+
+# CODE
+
+```python
+def number_pattern(n):
+    
+    if not isinstance(n, int):
+        return "Argument must be an integer value."
+    
+    if n <= 0:
+        return "Argument must be an integer greater than 0."
+
+    if isinstance(n,int):
+        num_list = []
+        for i in range(1,n+1):
+            num_list.append(i)
+        numbers = " ".join(map(str,num_list))
+        return numbers
+```
+
+---
+
+# SIMPLIFIED CODE
+
+```python
+def number_pattern(n):
+    if not isinstance(n, int):
+        return "Argument must be an integer value."
+    
+    if n < 1:
+        return "Argument must be an integer greater than 0."
+    
+    return " ".join(str(i) for i in range(1, n + 1))
+
+
+print(number_pattern(-3))
+```
