@@ -1,3 +1,9 @@
+# Build an Email Simulator
+
+## Note: This is provided as a guide only. Do not rely on it to bypass learning—always put in the effort and practice to earn your certification honestly.
+
+---
+
 # CODE
 
 ```python
