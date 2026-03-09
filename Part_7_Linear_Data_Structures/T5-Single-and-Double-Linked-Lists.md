@@ -7,7 +7,7 @@ Each **node** contains:
 - 🔗 **Reference (pointer)** to another node
 
 This structure forms a **chain of nodes**.
-```mermaid
+```python
 [A | next] → [B | next] → [C | next] → [D | next] → NULL
 ```
 
@@ -25,7 +25,7 @@ Linked lists are commonly used to implement:
 ## 🔹 What is a Singly Linked List?
 
 A **singly linked list** is a linked list where each node contains **one reference** pointing to the **next node**.
-```mermaid
+```python
 Head → A → B → C → D → NULL
 ```
 
@@ -54,7 +54,7 @@ Key characteristics:
 Traversal begins at the **head node**.
 
 Example traversal:
-```mermaid
+```python
 Head → A → B → C → D → NULL
 ```
 
@@ -89,7 +89,7 @@ Steps:
 1️⃣ Create new node  
 2️⃣ Point it to current head  
 3️⃣ Update head to new node  
-```mermaid
+```python
 Before:
 Head → A → B → C
 
@@ -110,7 +110,7 @@ Steps:
 
 1️⃣ Traverse to the **tail node**  
 2️⃣ Connect new node  
-```mermaid
+```python
 Before:
 A → B → C → NULL
 
@@ -130,7 +130,7 @@ Steps:
 
 1️⃣ Find previous node  
 2️⃣ Update references
-```mermaid
+```python
 Before:
 A → B → C
 
@@ -159,7 +159,7 @@ Nodes can also be removed from:
 Steps:
 
 1️⃣ Move head pointer to next node
-```mermaid
+```python
 Before:
 Head → A → B → C
 
@@ -179,7 +179,7 @@ Steps:
 
 1️⃣ Find previous node  
 2️⃣ Connect it to the next node  
-```mermaid
+```python
 Before:
 A → B → C
 
@@ -199,7 +199,7 @@ Steps:
 
 1️⃣ Traverse to node before tail  
 2️⃣ Remove last connection  
-```mermaid
+```python
 Before:
 A → B → C
 
@@ -221,7 +221,7 @@ A **doubly linked list** stores **two references** in each node:
 
 - Pointer to **next node**
 - Pointer to **previous node**
-```mermaid
+```python
 NULL ← A ⇄ B ⇄ C ⇄ D → NULL
 ```
 
@@ -237,7 +237,7 @@ Doubly linked lists can move:
 ⬅ **Backward**
 
 Example:
-```mermaid
+```python
 Forward: A → B → C → D
 Backward: D → C → B → A
 ```
@@ -277,7 +277,7 @@ Operations are **similar to singly linked lists**, but you must update:
 - **Previous reference**
 
 Example:
-```mermaid
+```python
 A ⇄ B ⇄ C
 
 Insert X between B and C
