@@ -89,28 +89,9 @@ If the key does **not** exist:
 ---
 
 ✅ **Goal:** Implement all methods correctly so that all tests pass.
-```
 
----
 
 # Code
-
-# 🧩 Hash Table Implementation (with Guide Comments)
-
-Below is the completed **HashTable** implementation with detailed comments to guide understanding of how each part of the code works.
-
----
-
-## 🧠 Concept Overview
-
-- A **hash table** stores key-value pairs.
-- Keys are converted into a numeric **hash value**.
-- The hash value determines where data is stored.
-- Collisions are handled using a **nested dictionary** (chaining).
-
----
-
-## 🧾 Source Code (With Explanatory Comments)
 
 ```python
 class HashTable:
